@@ -1,0 +1,26 @@
+{
+  "name": "ts-esm-project",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "scripts": {
+    "build": "tsc",
+    "subscribe": "node --loader ts-node/esm src/subscribe.ts",
+    "publish": "node --loader ts-node/esm src/publish.ts",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "@types/node": "^20.11.24",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "axios": "^1.9.0",
+    "dpsn-client": "^2.0.1"
+  }
+}
